@@ -11,11 +11,24 @@ body {
   background-size: cover;
   height: auto;
 }
+.cover {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(0,0,0,.4);
+  position: absolute;
+  top: 0;
+  z-index: 0  ;
+}
 
 header {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
+  left: 90%;
+  transition:left 1s;
+}
+header:hover{
+  left: 0;
 }
 
 .logo {
@@ -56,7 +69,7 @@ header {
   position: fixed;
   right: 1.5%;
   top: 83px;
-  background: rgba(0,0,0,0.2)
+  /* background: rgba(0,0,0,0.2); */
 }
 
 .main-container {
@@ -137,11 +150,12 @@ input {
   margin-bottom: 11px;
   /* border: black 1px solid; */
   overflow: scroll;
-  background: rgba(220, 222, 226, .6)
+  background: rgba(220, 222, 226, .6);
 }
 
 .new:hover {
   background: rgba(220, 222, 226, 2.2);
+  width:105%;
 }
 
 footer {
@@ -164,10 +178,34 @@ i:hover {
   color: dimgray;
   font-size: 35px;
 }
-
-h1 {
+div.typewriter{
+  margin: 0 auto;
   text-align: center;
-  font-size: 60px;
+  width: 30%;
+  height: auto;
+  overflow-y: visible;
+  padding: 0;
+}
+.typewriter h1 {
+  font-size: 50px;
+  text-shadow: 1px 1px 3px rgba(255,255,255,.5);
+  overflow: hidden;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .50s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
 }
 
 .new img {
