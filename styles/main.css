@@ -24,7 +24,8 @@ header {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
-  left: 90%;
+  border-radius: 35px 0% 0 43px;
+  left: 94.5%;
   transition:left 1s;
 }
 header:hover{
@@ -32,8 +33,10 @@ header:hover{
 }
 
 .logo {
-  width: 10%;
+  width: 5%;
   height: auto;
+  border: white 2.5px solid;
+  border-radius: 50% 10% 50% 50%;
 }
 
 .signup-button {
@@ -47,13 +50,13 @@ header:hover{
   box-shadow: 2px 2px 5px rgba(0,0,0.9);
   margin-top: 2.3%;
   margin-right: 2.3%;
-  background: rgba(0,50,150,0.4);
+  background: #4A99D6;
   color: white;
 }
 
 .signup-button:hover{
   font-size: 23px;
-  background: rgba(0,50,150,0.9);
+  background: #306c9b;
 }
 .signup-button:active{
   box-shadow: none;
@@ -73,10 +76,10 @@ header:hover{
 }
 
 .main-container {
-  background: url('https://images.pexels.com/photos/416346/pexels-photo-416346.jpeg?auto=compress&cs=tinysrgb&h=350');
+  background: url('https://c.pxhere.com/photos/71/ce/desk_pencil_draw_table_education_school_wooden_chalks-652304.jpg!d');
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size:;
   width: 65%;
   height: 600px;
   margin-top: 15px;
@@ -188,9 +191,9 @@ div.typewriter{
 }
 .typewriter h1 {
   font-size: 50px;
-  text-shadow: 1px 1px 3px rgba(255,255,255,.5);
+  text-shadow: 1px 1px 3px rgba(200,200,200,.5);
   overflow: hidden;
-  border-right: 2px solid white;
+  border-right: 3px solid rgba(200,200,200,.5);
   white-space: nowrap;
   margin: 0 auto;
   animation:
@@ -205,7 +208,7 @@ div.typewriter{
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: white; }
+  50% { border-color: rgba(200,200,200,.5); }
 }
 
 .new img {
